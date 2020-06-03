@@ -1,0 +1,29 @@
+Script to manipulate the Samsung Smartphones Dataset
+
+The Script reads the data from the directory 'UCI HAR Dataset'. The dataset needs to be in the working directory.
+
+The Script uses the provided files
+
+- 'features.txt' (List of all features)
+- 'train/X_train.txt' (Training set)
+- 'test/X_test.txt' (Test set)
+
+to name the variables of the provided training and test datasets.
+
+In order to save work space the measurements on the mean and standard deviation are selected from both datasets first. For a better readability the parentheses are removed from the variable names.
+
+The files
+- 'train/subject_train.txt' (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.)
+- 'train/y_train.txt' (Training labels)
+- 'test/subject_test.txt' (Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.)
+- 'test/y_test.txt' (Test labels)
+
+are used to add two columns which assign the appropriate subject identifier and activity to the individual observations.
+
+Finally the subsets are merged and descriptive activities from the file
+
+- 'activity_labels.txt' (Links the class labels with their activity name)
+
+are inserted.
+
+For step 5 the data is separated into subsets for each subject. The datasets for each subject are split into groups defined by the activities. The mean for each activity is calculated and the list is transformed into a data frame again. The result needs to be transposed to get the original columns. A column with the subject identifier is added and the new columns are named. The procedure is repeated for every subject and the result written to an output file.

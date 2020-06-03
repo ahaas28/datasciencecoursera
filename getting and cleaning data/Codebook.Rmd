@@ -1,0 +1,85 @@
+
+The variables of the tidy dataset are based on the Samsung Smartphones Dataset.
+
+The features selected for this original database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The derived mean value and standard deviation of these signals from the original dataset were selected and the average of the measurements were estimated for each subject and activity.
+
+It follows a complete list of the variables:
+
+
+ [1] subject: An identifier of the subject who carried out the experiment (1 - 30).
+ [2] activity: There are 6 activities: LAYING. SITTING, STANDING, WALKING, WALKING DOWNSTAIRS, WALKING UPSTAIRS                       
+ [3] mean(tBodyAcc-mean-X)          
+ [4] mean(tBodyAcc-mean-Y)          
+ [5] mean(tBodyAcc-mean-Z)          
+ [6] mean(tBodyAcc-std-X)           
+ [7] mean(tBodyAcc-std-Y)           
+ [8] mean(tBodyAcc-std-Z)           
+ [9] mean(tGravityAcc-mean-X)       
+[10] mean(tGravityAcc-mean-Y)       
+[11] mean(tGravityAcc-mean-Z)       
+[12] mean(tGravityAcc-std-X)        
+[13] mean(tGravityAcc-std-Y)        
+[14] mean(tGravityAcc-std-Z)        
+[15] mean(tBodyAccJerk-mean-X)      
+[16] mean(tBodyAccJerk-mean-Y)      
+[17] mean(tBodyAccJerk-mean-Z)      
+[18] mean(tBodyAccJerk-std-X)       
+[19] mean(tBodyAccJerk-std-Y)       
+[20] mean(tBodyAccJerk-std-Z)       
+[21] mean(tBodyGyro-mean-X)        
+[22] mean(tBodyGyro-mean-Y)         
+[23] mean(tBodyGyro-mean-Z)         
+[24] mean(tBodyGyro-std-X)          
+[25] mean(tBodyGyro-std-Y)          
+[26] mean(tBodyGyro-std-Z)          
+[27] mean(tBodyGyroJerk-mean-X)   
+[28] mean(tBodyGyroJerk-mean-Y)     
+[29] mean(tBodyGyroJerk-mean-Z)     
+[30] mean(tBodyGyroJerk-std-X)      
+[31] mean(tBodyGyroJerk-std-Y)      
+[32] mean(tBodyGyroJerk-std-Z)      
+[33] mean(tBodyAccMag-mean)         
+[34] mean(tBodyAccMag-std)       
+[35] mean(tGravityAccMag-mean)      
+[36] mean(tGravityAccMag-std)      
+[37] mean(tBodyAccJerkMag-mean)     
+[38] mean(tBodyAccJerkMag-std)      
+[39] mean(tBodyGyroMag-mean)        
+[40] mean(tBodyGyroMag-std)     
+[41] mean(tBodyGyroJerkMag-mean)    
+[42] mean(tBodyGyroJerkMag-std)     
+[43] mean(fBodyAcc-mean-X)          
+[44] mean(fBodyAcc-mean-Y)          
+[45] mean(fBodyAcc-mean-Z)          
+[46] mean(fBodyAcc-std-X)           
+[47] mean(fBodyAcc-std-Y)           
+[48] mean(fBodyAcc-std-Z)         
+[49] mean(fBodyAccJerk-mean-X)      
+[50] mean(fBodyAccJerk-mean-Y)      
+[51] mean(fBodyAccJerk-mean-Z)      
+[52] mean(fBodyAccJerk-std-X)       
+[53] mean(fBodyAccJerk-std-Y)       
+[54] mean(fBodyAccJerk-std-Z)       
+[55] mean(fBodyGyro-mean-X)         
+[56] mean(fBodyGyro-mean-Y)         
+[57] mean(fBodyGyro-mean-Z)         
+[58] mean(fBodyGyro-std-X)          
+[59] mean(fBodyGyro-std-Y)          
+[60] mean(fBodyGyro-std-Z)          
+[61] mean(fBodyAccMag-mean)         
+[62] mean(fBodyAccMag-std)  
+[63] mean(fBodyBodyAccJerkMag-mean)
+[64] mean(fBodyBodyAccJerkMag-std)  
+[65] mean(fBodyBodyGyroMag-mean)    
+[66] mean(fBodyBodyGyroMag-std)
+[67] mean(fBodyBodyGyroJerkMag-mean)
+[68] mean(fBodyBodyGyroJerkMag-std)
